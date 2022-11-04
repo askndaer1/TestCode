@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "ezziDelivery",
+    "slug": "ezziDelivery",
+    "scheme": "ezzidelivery",
+    "privacy": "unlisted",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "sounds": ["./assets/s.wav"],
+          "icon": "./assets/icon.png",
+          "color": "#ffffff",
+          "mode": "production"
+        }
+      ],
+      "expo-location"
+    ],
+    "splash": {
+      "image": "./assets/splash1.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#fff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "bundleIdentifier": "com.codesoft.ezzidelivery",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to get image for profile photo.",
+        "NSPhotoLibraryUsageDescription": "This app uses the photo library to get image for profile photo.",
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSFaceIDUsageDescription": "This app will optionally use Face ID or Touch ID to save login",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Allow $(PRODUCT_NAME) to access your location",
+        "NSLocationAlwaysUsageDescription": "Allow $(PRODUCT_NAME) to access your location",
+        "NSLocationWhenInUseUsageDescription": "Allow $(PRODUCT_NAME) to access your location"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "icon": "./assets/icon.png",
+      "package": "com.codesoft.ezzidelivery",
+      "versionCode": 1,
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.FOREGROUND_SERVICE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
